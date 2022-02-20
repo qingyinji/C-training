@@ -1,0 +1,1 @@
+void base_debug(void);
