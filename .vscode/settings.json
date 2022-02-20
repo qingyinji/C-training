@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "*.h": "c",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "*.tcc": "cpp",
+        "iostream": "cpp"
     }
 }
