@@ -32,7 +32,7 @@ try:
             for index, component in enumerate(components):
                 components[index] = '\"{}\"'.format(component)
             components_list = ','.join(components)
-            fp1.write('target(\"{}\")\n\tset_kind(\"binary\")\n\tadd_files(\"src/*.cc\")\n\tadd_deps({})'.format(app_name, components_list))
+            fp1.write('target(\"{}\")\n\tset_kind(\"binary\")\n\tadd_files(\"src/*.cc\")\n\tadd_deps({})\n\tadd_includedirs(\"inc\")'.format(app_name, components_list))
 
         print('=======================')
         os.system('xmake')

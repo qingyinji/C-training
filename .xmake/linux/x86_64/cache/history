@@ -32,6 +32,21 @@
         "xmake ",
         "xmake ",
         "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake lua /home/beishan/.local/share/xmake/actions/build/statistics.lua",
+        "xmake lua /home/beishan/.local/share/xmake/actions/build/cleaner.lua",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
         "xmake "
     }
 }
