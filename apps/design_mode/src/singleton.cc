@@ -1,3 +1,6 @@
+/* 
+    单例模式
+*/
 #include "singleton.h"
 
 Singleton& Singleton::get_id(){
