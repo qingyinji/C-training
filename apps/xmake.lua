@@ -1,2 +1,2 @@
 add_defines("APPS")
-includes("design_mode")
+includes("sort_test")
