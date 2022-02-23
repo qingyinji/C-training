@@ -3,6 +3,7 @@
 #include"observer.h"
 #include"easy_factory.h"
 #include"adapter.h"
+#include"command.h"
 
 int main(int argc, char **argv)
 {
@@ -23,6 +24,15 @@ int main(int argc, char **argv)
 
     Target *target = new Adapter();
     target->request();
+
+    Receiver *receiver = new Receiver();
+    Command *command = new ConcreteCommand();
+    command->setReceiver(receiver);
+    Invoker i;
+    i.setCommand(command);
+    i.notify();
+    delete receiver;
+    delete command;
 
     return 0;
 }
